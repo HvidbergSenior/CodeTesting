@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+      <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\deftq.BuildingBlocks\deftq.BuildingBlocks.csproj" />
+    <ProjectReference Include="..\deftq.UserAccess.Application\deftq.UserAccess.Application.csproj" />
+  </ItemGroup>
+
+</Project>

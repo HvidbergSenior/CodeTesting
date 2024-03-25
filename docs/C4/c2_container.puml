@@ -1,0 +1,50 @@
+@startuml Akkord System
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+
+!include DEVICONS/react.puml
+!include DEVICONS/dotnet.puml
+!include DEVICONS/java.puml
+!include DEVICONS/postgresql.puml
+!include FONTAWESOME/server.puml
+!include FONTAWESOME/envelope.puml
+!include FONTAWESOME/cloud.puml
+
+Person(akkordHolder, "Akkordholder")
+Person(akkordDeltager, "Akkorddeltager")
+Person(projectManager, "Project Manager")
+
+System_Boundary(eba, "Akkord+"){
+    Container(web, "Web application", "React", "GUI optimized for Akkord+","react")
+    Container(application, "Backend", ".NET 6", "Backend for web applications", "dotnet")
+    ContainerDb(database, "Database", "PostgreSQL","","postgresql")
+}
+
+System_Ext(fileStorage, "File Storage","Azure blob storage", "cloud")
+System_Ext(azureAD, "Azure AD B2C")
+System_Ext(dataCenter, "EG Datacenter")
+System_Ext(kalkia, "Calculation System")
+System_Ext(def, "DEF membership directory")
+System_Ext(tekniq, "Tekniq membership directory")
+
+Rel_R(def, application, "Integrates with")
+Rel_L(tekniq, application, "Integrates with")
+
+Rel_L(dataCenter, application, "Imports data")
+Rel_L(kalkia,application, "Imports data")
+Rel_L(application,kalkia, "Exports data")
+
+Rel(akkordHolder, azureAD, "Authenticates via")
+Rel(akkordDeltager, azureAD, "Authenticates via")
+Rel(projectManager, azureAD, "Authenticates via")
+
+Rel(web,application,"Uses", "HTTP/S")
+Rel(application,database,"Reads/writes data","ODBC")
+
+Rel(application, fileStorage, "Upload files to","HTTP/S")
+
+Rel(projectManager, web, "Uses")
+Rel(akkordHolder, web, "Uses")
+Rel(akkordDeltager, web, "Uses")
+@enduml

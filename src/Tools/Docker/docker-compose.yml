@@ -1,0 +1,58 @@
+version: '3.1'
+
+services:
+  db:
+    image: clkao/postgres-plv8:11-2
+    restart: always
+    ports:
+      - "5432:5432"
+    networks: 
+      - deftq
+    container_name: postgresdb
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: deftq_db 
+      POSTGRES_USER: postgres
+    volumes:
+      - postgres_v:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+    networks:
+      - deftq
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    volumes:
+      - pgadmin_v:/var/lib/pgadmin
+  deftq:
+    image: deftq_image:latest
+    container_name: deftq
+    build: 
+      context: ../../
+      dockerfile: ./Tools/Docker/Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    networks:
+      - deftq
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://*:5001;http://*:5000
+      ASPNETCORE_Kestrel__Certificates__Default__Password: ssl-password
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/deftq_api_dev_cert.pfx
+      Marten__ConnectionString: "Host=db;Port=5432;Database=deftq_db;Username=postgres;Password=password"
+    profiles: ["api"]
+
+networks:
+  deftq:
+    driver: bridge
+volumes:
+  postgres_v:
+  pgadmin_v:

@@ -1,0 +1,34 @@
+@startuml "System Context"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+Person(akkordHolder, "Akkordholder","Bruger system til at afvikle et Projekt via en akkord")
+Person(akkordDeltager, "Akkorddeltager","Foretager opmålinger og rapporterer til akkordholder")
+Person(projektLeder, "Projektleder","Leder byggeprojekter, som udføres af installationsvirksomhed")
+Person_Ext(bogholder, "Bogholder")
+
+
+
+System_Ext(payRoll, "Lønsystem")
+System_Ext(azureAd, "Azure AD B2C")
+System_Ext(dataCenter, "EG Datacenter")
+System_Ext(kalkia, "Kalkia")
+
+System(eba, "Akkord+")
+
+Rel(dataCenter, eba, "Materialelister med tidsmålinger")
+
+Rel(akkordHolder, azureAd, "Logger ind via")
+Rel(akkordDeltager, azureAd, "Logger ind via")
+Rel(projektLeder, azureAd, "Logger ind via")
+Rel(azureAd, eba, "Giver adgang til")
+
+Rel(projektLeder, eba, "Har overblik over Akkorder og Projekter")
+Rel(akkordHolder, eba, "Kontroller og godkender opmåling")
+Rel(akkordDeltager, eba, "Registrer opmålinger")
+
+
+Rel(eba, payRoll, "Stiller manglende akkord udbetaling til rådighed")
+Rel(bogholder, payRoll, "Bruger")
+@enduml

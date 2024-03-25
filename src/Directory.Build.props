@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+    <PropertyGroup>
+        <NoWarn>CA1014</NoWarn>
+        <!--<NoWarn>1570;1571;1572;1573;1574;1587;1591;1701;1702;1711;1735;0618</NoWarn>-->
+    </PropertyGroup>
+
+    <!-- *************************************************
+         Apply to every Solutions
+    ************************************************** -->
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <WarningsAsErrors>nullable</WarningsAsErrors>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <AnalysisModeReliability>true</AnalysisModeReliability>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+        <AnalysisLevel>latest</AnalysisLevel>
+        <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+        <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+        <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+        <!--<RunCodeAnalysis>true</RunCodeAnalysis>-->
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <!-- *************************************************
+         Import these Packages into every Solution
+    ************************************************** -->
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.0.64" PrivateAssets="All" />
+        <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.3" PrivateAssets="All" Condition=" '$(TargetFrawework)' == 'netstandard2.0' " />
+        <PackageReference Include="Meziantou.Analyzer" Version="1.0.701">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Roslynator.Analyzers" Version="4.1.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="xunit.analyzers" Version="0.12.0-pre.19" />
+        <!--<PackageReference Include="SonarAnalyzer.CSharp" Version="8.39.0.47922">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>-->
+        <!--<PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>-->
+    </ItemGroup>
+</Project>

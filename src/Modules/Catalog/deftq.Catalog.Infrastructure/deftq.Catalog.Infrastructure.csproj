@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>nullable</WarningsAsErrors>
+    </PropertyGroup>
+	<ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>deftq.Catalog.Test</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+	<ItemGroup>
+        <ProjectReference Include="..\..\..\BuildingBlocks\deftq.BuildingBlocks\deftq.BuildingBlocks.csproj" />
+        <ProjectReference Include="..\deftq.Catalog.Aplication\deftq.Catalog.Application.csproj" />
+        <ProjectReference Include="..\deftq.Catalog.Domain\deftq.Catalog.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,1200 @@
+{
+  "application": {
+    "title": "Akkord+"
+  },
+  "common": {
+    "add": "Tilføj",
+    "allProjects": "Alle projekter",
+    "back": "Tilbage",
+    "cancel": "Annuller",
+    "close": "Luk",
+    "continue": "Fortsæt",
+    "copyTo": "Kopier til",
+    "create": "Opret",
+    "currency": "kr.",
+    "delete": "Slet",
+    "description": "Beskrivelse",
+    "edit": "Rediger",
+    "finish": "Afslut",
+    "logout": "Log ud",
+    "move": "Flyt",
+    "moveTo": "Flyt til",
+    "name": "Navn",
+    "next": "Næste",
+    "note": "Note",
+    "off": "Fra",
+    "offline": "Der er ikke internetforbindelse",
+    "ok": "OK",
+    "on": "Til",
+    "online": "Der er internetforbindelse",
+    "percent": "%",
+    "remove": "Fjern",
+    "rename": "Omdøb",
+    "reset": "Nulstil",
+    "save": "Gem",
+    "saveAndClose": "Gem og luk",
+    "select": "Vælg",
+    "time": {
+      "label": "Tid",
+      "hours": "Timer",
+      "minutes": "Minutter",
+      "seconds": "Sekunder",
+      "year": "År",
+      "month": "Måned",
+      "date": "Dato",
+      "today": "I dag",
+      "week": "Uge"
+    },
+    "viewMore": "Vis mere",
+    "update": "Opdater"
+  },
+  "captions": {
+    "name": "Indtast navn",
+    "nameRequired": "Indtast navn*",
+    "note": "Indtast note",
+    "noteRequired": "Indtast note*",
+    "noteOptional": "Indtast note (valgfri)",
+    "payment": "Angiv kr.",
+    "paymentRequired": "Angiv kr.*",
+    "projectName": "Indtast projectnavn",
+    "projectNameRequired": "Indtast projektnavn*",
+    "time": "Angiv timer og minutter",
+    "timeRequired": "Angiv timer og minutter*",
+    "timeWithSec": "Angiv timer, minutter og sekunder",
+    "timeWithSecRequired": "Angiv timer, minutter og sekunder*",
+    "type": "Vælg type",
+    "typeRequired": "Vælg type*"
+  },
+  "valueLabels": {
+    "price": "{{price}} kr.",
+    "hours": "{{hours}} t"
+  },
+  "languages": {
+    "danish": "Dansk",
+    "english": "Engelsk"
+  },
+  "login": {
+    "login": "Log ind",
+    "welcome": "Velkommen til",
+    "description": "Akkordsystemet skabt i samarbejde mellem Dansk El-Forbund og TEKNIQ Arbejdsgiverne.",
+    "about": "OM AKKORD+",
+    "aboutMobile": "OM AKKORDPLUS"
+  },
+  "form": {
+    "createdAt": "Oprettet",
+    "createdBy": "Oprettet af",
+    "lastModified": "Senest ændret",
+    "error": {
+      "title": "Fejl!",
+      "description": "Der skete en fejl. Prøv venligst igen."
+    },
+    "success": {
+      "description": "Handlingen er udført"
+    }
+  },
+  "project": {
+    "title": "Alle projekter",
+    "description": "På projektlisten ses et overblik over alle projekter som du er tilknyttet til.",
+    "getProject": {
+      "error": "Kan ikke hente det valgte project, genindlæs siden"
+    },
+    "getProjects": {
+      "error": "Kan ikke hente listen af projekter, genindlæs siden"
+    },
+    "menu": {
+      "select": "Vælg projekt",
+      "selectedError": "Valgte project kan ikke vises, der er sket en fejl, prøv igen."
+    },
+    "pieceworkTypes": {
+      "TwelveOneA": {
+        "header": "§ 12.1.a: Den med en kalkulation fra virksomheden",
+        "description": "Virksomhedens opmåling efter EBA tilegnes akkordaftalen. Ved ændringer under arbejdets udførelse af det af virksomheden opmålte projekt, aftales regulering af virksomhedens opmåling.",
+        "short": "12.1.a"
+      },
+      "TwelveOneB": {
+        "header": "§ 12.1.b: Den med akkorddeltagers opmålinger",
+        "description": "Akkordindehaveren opmåler projektet  under arbejdets udførelse eller ved afslutning.",
+        "short": "12.1.b"
+      },
+      "TwelveOneC": {
+        "header": "§ 12.1.c: Den hvor begge parter opmåler",
+        "description": "Akkordindehaveren og virksomheden opmåler hver sin aftalte del af projektet efter EBA under arbejdets udførelse eller ved afslutning.",
+        "short": "12.1.c"
+      },
+      "TwelveTwo": {
+        "header": "§ 12.2: Anden form for akkordaftale",
+        "description": "Denne er gældende for akkordaftale for arbejde der udføres og afregnes i akkord som anden form for akkordaftale.",
+        "short": "12.2"
+      }
+    },
+    "projectSetup": {
+      "info": {
+        "name": {
+          "title": "Navngiv dit projekt",
+          "input": "Projektnavn",
+          "error": "Projektnavn skal angives"
+        },
+        "pieceworkNumber": {
+          "title": "Akkord nummer"
+        },
+        "description": {
+          "caption": "Tilføj beskrivelse (valgfri)",
+          "description": "Beskrivelsen kan læses af alle tilknyttet projektet i Akkord+",
+          "input": "Projektbeskrivelse"
+        }
+      },
+      "orderAndPieceworkNumber": {
+        "title": "Tilføj ordre og akkord nummer",
+        "captionOrdreNumber": "Tilføj ordre nummer (valgfri)",
+        "ordreNumber": "Ordre nummer",
+        "captionPieceworkNumber": "Tilføj akkord nummer (valgfri)",
+        "pieceworkNumber": "Akkord nummer"
+      },
+      "pieceworkType": {
+        "title": "Vælg akkordtype §",
+        "description": "I Akkord+ findes der flere akkordtyper. Elektrikeroverenskomsten er derfor opdateret med nye akkordbestemmelser i §§ 11, 12.1, 12.2 og 12.3"
+      },
+      "lumpSum": {
+        "title": "§12.2 Indtast akkordsum for projektet",
+        "inputTitle": "Indtast akkordsum (valgfri)"
+      },
+      "period": {
+        "title": "Vælg projektperiode",
+        "from": "Angiv projekt start dato (valgfri)",
+        "to": "Angiv projekt slut dato (valgfri)"
+      },
+      "company": {
+        "title": "Tilføj arbejdsplads og virksomhed",
+        "companyCaption": "Tilføj navn på virksomhed (valgfri)",
+        "company": "Navn på virksomhed",
+        "adrCaption": "Tilføj arbejdsstedets adresse (valgfri)",
+        "adr": "Arbejdsstedets adresse",
+        "cvrNumberCaption": "Tilføj CVR nummer (valgfri)",
+        "cvrNumber": "CVR nummer",
+        "pNumberCaption": "Tilføj P Nummer (valgfri)",
+        "pNumber": "P Nummer"
+      },
+      "upload": {
+        "title": "Upload akkordaftale",
+        "description": "Du kan uploade en akkordaftale nu eller på et senere tidspunkt.",
+        "button": "Upload"
+      },
+      "users": {
+        "title": "Tilføj akkorddeltagere",
+        "description": "Tilføj akkorddeltagere. Akkordeltagere kan også tilføjes og fjernes senere i projektet",
+        "input": "Navn på deltager"
+      },
+      "import": {
+        "title": "Importer kalkulation",
+        "description": "Her kan du importere virksomhedens kalkulation. Dette er også muligt på et senere tidspunkt fra din projektside.",
+        "button": "Importer"
+      },
+      "summary": {
+        "title": "Godkend og opret projekt",
+        "name": "Navn på projektet",
+        "description": "Beskrivelse af projektet",
+        "pieceworkType": "Akkordtype",
+        "lumpSum": "Akkordsum",
+        "documents": "Dokumenter",
+        "company": "Virksomhed",
+        "users": "Akkorddeltagere"
+      }
+    },
+    "create": {
+      "restrictedError": "Du har ikke adgang til at oprette projekter",
+      "button": "Opret nyt projekt",
+      "success": {
+        "title": "Projekt oprettet",
+        "description": "Projektet er oprettet og klar til at bruge."
+      },
+      "error": {
+        "title": "Fejl",
+        "description": "Oprettelsen af projektet fejlede. Prøv igen."
+      }
+    },
+    "delete": {
+      "title": "Slet projekt",
+      "description": "Du er ved at slette et projekt og alle dets underliggende opmålinger, mapper, skurbog m.m.",
+      "success": {
+        "title": "Projekt slettet",
+        "description": "Projektet og alle dets underliggende mapper er slettet."
+      }
+    },
+    "offline": {
+      "title": "Ingen forbindelse til internettet",
+      "description": "For at arbejde videre i Akkord+, skal du have internetforbindelse. Kan det ikke lade sig gøre lige nu, har du mulighed for, at foretage opmålinger i kladder:",
+      "descriptionButtonless": "For at arbejde videre i Akkord+, skal du have internetforbindelse.",
+      "goToDraft": "GÅ TIL KLADDER",
+      "onlineSignal": "Der er internetforbindelse",
+      "offlineSignal": "Der er ikke internetforbindelse",
+      "favorites": {
+        "getFavoritesError": "Kan ikke hente favoritter til offline-funktionalitet",
+        "getMaterialError": "Kan ikke hente material for favorit {{material}} til offline-funktionalitet"
+      },
+      "supplements": {
+        "getSupplementsError": "Kan ikke hente genetillæg til offline-funktionalitet"
+      },
+      "create": {
+        "success": {
+          "description": "Kladden er gemt lokalt"
+        },
+        "error": {
+          "description": "Der er sket en fejl kan ikke gemme kladden"
+        },
+        "note": {
+          "noteLabel": "Note på opmålingen",
+          "maxChar": "Max. 60 karakterer",
+          "header": "Tilføj note"
+        }
+      },
+      "copy": {
+        "stepFolderSelect": {
+          "errorLockFolder": "Du har ikke adgang til at flytte kladder til valgte mappe",
+          "title": "Kopier opmåling(er)",
+          "description": "Når du flytter opmåling(er), oprettes de i den valgte mappe"
+        },
+        "stepCopy": {
+          "title": "Kopier opmåling(er)",
+          "description": "Opmåling(er) er ved at blive kopieret til den valgte mappe"
+        }
+      },
+      "delete": {
+        "success": "Kladde(rne) er slettet",
+        "error": "Fejl ved sletning af kladde(rne)",
+        "title": "Slet kladde(r)?",
+        "description": "Du er ved at slette kladder. Handlingen kan ikke fortrydes."
+      },
+      "info": {
+        "title": "Detaljer om kladde"
+      }
+    },
+    "editProjectType": {
+      "restrictedError": "Du har ikke adgang til at rette i projektet",
+      "success": {
+        "title": "Ændringer til project info. er gemt"
+      },
+      "error": {
+        "description": "Ændringer til project info. fejlede. Prøv igen."
+      }
+    },
+    "editProjectCompany": {
+      "restrictedError": "Du har ikke adgang til at rette i projektet",
+      "success": {
+        "title": "Ændringer til project info. er gemt"
+      },
+      "error": {
+        "title": "Ændringer til project info. fejlede. Prøv igen."
+      }
+    },
+    "editProjectName": {
+      "restrictedError": "Du har ikke adgang til at rette i projektet",
+      "success": {
+        "title": "Ændringer til project info. er gemt"
+      },
+      "error": {
+        "description": "Ændringer til project info. fejlede. Prøv igen."
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Projektoversigt",
+    "pieceworkTotalSaved": "Aftalt akkordsum er gemt",
+    "widgetTitle": {
+      "pieceworkTotalPrice": "Akkordsum",
+      "logbookHours": "Skurbogstimer",
+      "workitemsTotalPrice": "Opmålinger",
+      "workitemsExtraTotalPrice": "Heraf opmålt ekstra arbejde",
+      "workAgreements": "Aftalesedler",
+      "calculation": "Kalkulation",
+      "pieceworkTotal": "Aftalt akkordsum"
+    },
+    "editAgreedLumpsum": {
+      "title": "Rediger aftalt akkordsum",
+      "caption": "Indtast aftalt akkordsum (valgfri)"
+    },
+    "linkHeader": "Gå til",
+    "summary": {
+      "getSummaryError": "Kan ikke hentet opsummeringen for projektet"
+    },
+    "links": {
+      "projectInfo": "Projektinfo",
+      "compensationPayments": "Optræk",
+      "extraWorkAgreements": "Aftalesedler",
+      "favorits": "Favoritliste",
+      "users": "Projektdeltager",
+      "projectSpecificOperations": "Lokale emner",
+      "reports": "Rapporter"
+    },
+    "projectInfo": {
+      "pieceworkTypeAndPeriod": {
+        "title": "Akkordtype og periode",
+        "type": "Akkordtype",
+        "sum": "Akkordsum",
+        "period": "Start- og slut dato",
+        "projectNumber": "System Id",
+        "projectDate": "Dato for oprettelse"
+      },
+      "contactInfo": {
+        "title": "Adresse og virksomhed",
+        "adress": "Arbejdsstedets adresse",
+        "name": "Virksomhed",
+        "cvr": "Cvr nummer",
+        "p": "P nummer"
+      },
+      "projectNameAndDescription": {
+        "title": "Projektnavn og beskrivelse",
+        "project": "Projektnavn",
+        "pieceworkNumber": "Akkord nummer",
+        "orderNumber": "Ordre nummer",
+        "description": "Projektbeskrivelse"
+      },
+      "customerCompanyTitle": "Kunde- og firmatimer",
+      "customerCompanyDescription": "Kunde- og firmatimers værdi bruges til at udregne værdien af aftalesedler.",
+      "restrictionError": "Du har ikke adgang til at redigere kunde/firmatimer",
+      "customerCompany": {
+        "customerHours": "Kundetimer",
+        "companyHours": "Firmatimer"
+      },
+      "editHours": {
+        "title": "Rediger tid og kr.",
+        "captionCompanyHoursRate": "Indtast sats for firmatimer",
+        "captionCustomerHoursRate": "Indtast sats for kundetimer",
+        "success": "Ændringer i kunde/firmatimer er gemt",
+        "failure": "Ændringer i kunde/firmatimer er mislykket"
+      }
+    },
+    "favorits": {
+      "getFavorites": {
+        "error": "Kan ikke indlæse projektes favoritter, genindlæs siden.",
+        "noFavorites": "Der er endnu ikke tilføjet noget indhold"
+      },
+      "table": {
+        "text": "Navn",
+        "unit": "Enhed",
+        "info": "Info"
+      },
+      "title": "Favoritliste",
+      "description": "Projektets favoritliste er tilgængelig for alle akkorddeltagere.",
+      "create": {
+        "title": "Tilføj til favoritliste",
+        "success": {
+          "description": "Favoritten er tilføjet projektets favoritliste."
+        },
+        "error": {
+          "description": "Favoritten kunne ikke tilføjes projektets favoritliste, prøv igen!"
+        }
+      },
+      "delete": {
+        "restrictionError": "Du har ikke adgang til at slette favoritter",
+        "success": {
+          "description": "Favorit(ter) er slettet."
+        },
+        "title": "Slet favorit(ter)?",
+        "description": "Du er ved at slette favorit(ter). Handlingen kan ikke fortrydes."
+      }
+    },
+    "extraWorkAgreements": {
+      "getExtraWorkAgreements": {
+        "error": "Kan ikke indlæse projektes aftalesedler, genindlæs siden.",
+        "noExtraWorkAgreements": "Der er endnu ikke tilføjet noget indhold"
+      },
+      "types": {
+        "customerHours": "Kundetimer",
+        "companyHours": "Firmatimer",
+        "agreedPayment": "Aftalt pris",
+        "other": "Andet"
+      },
+      "table": {
+        "id": "Aftaleseddel nr.",
+        "type": "Type",
+        "info": "Info"
+      },
+      "create": {
+        "title": "Tilføj aftaleseddel",
+        "number": {
+          "label": "Aftaleseddel nr. (valgfri)",
+          "input": "Nr."
+        },
+        "name": {
+          "input": "Navn på aftalesedlen"
+        },
+        "description": {
+          "input": "Note på aftalesedlen"
+        },
+        "type": {
+          "noSelectLabel": "Type"
+        },
+        "restrictionError": "Du har ikke adgang til at oprette aftalesedler.",
+        "success": {
+          "description": "Aftalesedlen er tilføjet til projektet."
+        },
+        "error": {
+          "description": "Aftalesedlen kunne ikke tilføjes til projektet, prøv igen!"
+        }
+      },
+      "update": {
+        "title": "Opdater aftaleseddel",
+        "disabledTitle": "Aftalesedler",
+        "restrictionError": "Du har ikke adgang til at opdater aftaleseddeler.",
+        "success": {
+          "description": "Aftalesedlen er opdateret."
+        },
+        "error": {
+          "description": "Aftalesedlen kunne ikke opdateres, prøv igen!"
+        }
+      },
+      "delete": {
+        "restrictionError": "Du har ikke adgang til at slette aftalesedler",
+        "success": {
+          "description": "Aftalesedler er slettet."
+        },
+        "title": "Slet aftalesedler?",
+        "description": "Du er ved at slette aftalesedler. Handlingen kan ikke fortrydes."
+      }
+    },
+    "compensationPayments": {
+      "restrictionError": "Du har ikke adgang til at se optræk.",
+      "description": "På denne side kan akkordholder administrerer optræk.",
+      "getCompensationPayments": {
+        "error": "Kan ikke indlæse projektes optræk, genindlæs siden.",
+        "noCompensationPayments": "Der er endnu ikke tilføjet noget indhold"
+      },
+      "table": {
+        "amount": "Beløb kr./t",
+        "period": "Periode",
+        "users": "Valgte deltagere"
+      },
+      "participants": {
+        "table": {
+          "hoursAndAmount": "Optrækssum for periode"
+        }
+      },
+      "info": {
+        "title": "Optræk",
+        "amountLabel": "Beløb {{amount}} kr.",
+        "periodLabel": "Gældende for periode* {{periodStart}} - {{periodEnd}}."
+      },
+      "create": {
+        "step1PeriodAndAmount": {
+          "title": "Tilføj optræk på projektet",
+          "captionAmount": "Indtast beløb for tillæg*",
+          "captionPeriod": "Periode for tillæg",
+          "captionPeriodStart": "Angiv optræk start*",
+          "captionPeriodEnd": "Angiv optræk slut*",
+          "errorPeriodEndBeforeStart": "Optræk start skal starte før optræk slut.",
+          "errorAmount": "Beløb for tillæg skal være større end 0."
+        },
+        "step2Users": {
+          "title": "Tildel optræk til deltagere",
+          "getParticipantsError": "Kan ikke hente listen af deltagere, prøv igen!",
+          "periodDescription": "*De udregnede timer i kolonnen \"Optræksum for periode\" gælder for deltagernes lukkede timer i skurbongen. De lukkede timer i skurbogen gælder for dags dato lige nu og ændres timerne i skurbogen på et senere tidspunkt vil optrækssummen også ændre sig."
+        },
+        "success": {
+          "description": "Optræk er tilføjet projektet."
+        },
+        "error": {
+          "description": "Optræk kunne ikke tilføjes projektet, prøv igen!"
+        }
+      },
+      "delete": {
+        "restrictionError": "Du har ikke adgang til at slette optræk",
+        "success": {
+          "description": "Optræk er slettet."
+        },
+        "title": "Slet optræk?",
+        "description": "Du er ved at slette optræk. Handlingen kan ikke fortrydes."
+      }
+    },
+    "projectSpecificOperations": {
+      "restrictionError": "Du har ikke adgang til at se lokalt emner.",
+      "description": "På denne side kan akkordholder administrere lokale emner",
+      "types": {
+        "workingTime": "Arbejdstid",
+        "operationTime": "Operationstid"
+      },
+      "getProjectSpecificOperations": {
+        "error": "Kan ikke indlæse projektes lokalt emner, genindlæs siden.",
+        "noProjectSpecificOperations": "Der er endnu ikke tilføjet noget indhold"
+      },
+      "table": {
+        "extraWorkAgrrementNumber": "Aftaleseddel nr."
+      },
+      "info": {
+        "title": "Optræk",
+        "amountLabel": "Beløb {{amount}} kr.",
+        "periodLabel": "Gældende for periode* {{periodStart}} - {{periodEnd}}."
+      },
+      "create": {
+        "title": "Opret lokalt emne",
+        "description": "Projektets lokale emner kan fremsøges via favoritlisten, når der måles op",
+        "restrictionError": "Du har ikke adgang til at oprette lokale emner",
+        "input": {
+          "number": {
+            "label": "Aftaleseddel nr. (valgfri)",
+            "placeholder": "Nr."
+          },
+          "name": {
+            "placeholder": "Navn på lokalt emne"
+          },
+          "description": {
+            "placeholder": "Note"
+          },
+          "type": {
+            "label": "Sæt en tid for det lokale emne*"
+          }
+        },
+        "success": {
+          "description": "Lokalt emne er tilføjet projektet."
+        },
+        "error": {
+          "description": "Lokalt emne kunne ikke tilføjes projektet, prøv igen!"
+        }
+      },
+      "update": {
+        "info": {
+          "title": "Detaljer for lokalt emne"
+        },
+        "edit": {
+          "title": "Rediger lokalt emne",
+          "description": "Bemærk at ændringer af lokale emner kun vil gælde for fremtidige opmålingslinjer og ikke for allerede oprettede opmålingslinjer."
+        },
+        "restrictionError": "Du har ikke adgang til at rette lokalt emne",
+        "input": {
+          "number": {
+            "label": "Aftaleseddel nr."
+          }
+        },
+        "success": {
+          "description": "Lokalt emne er opdateret."
+        },
+        "error": {
+          "description": "Lokalt emne kunne ikke opdateres, prøv igen!"
+        }
+      },
+      "delete": {
+        "restrictionError": "Du har ikke adgang til at slette lokalt emne",
+        "success": {
+          "description": "Lokalt emne er slettet."
+        },
+        "title": "Slet lokalt emne?",
+        "description": "Du er ved at slette et eller flere lokale emner. Handlingen kan ikke fortrydes."
+      }
+    },
+    "reports": {
+      "cardContentTitle": "Rapporten indeholder:",
+      "showReport": "Vis rapport",
+      "exportReport": "Eksporter data",
+      "unknownReport": {
+        "file": "Ukendt rapport type {{date}}.xlsx",
+        "DownloadError": "Kan ikke downloade ukendt rapport!"
+      },
+      "projectReport": {
+        "title": "Projektinfo",
+        "description": "Denne rapport åbnes i et nytvindue og kan udskrives eller eksporteres til PDF.",
+        "content": [
+          "Stamdata om projektet (den information der findes under \"Overordnet projektinfo\")",
+          "Information om projektdeltagere",
+          "Tal for akkordsum",
+          "Sammenstilling for hele projektet"
+        ]
+      },
+      "logbookReport": {
+        "title": "Skurbog",
+        "description": "Denne rapport er en XML-fil (Excel) og indeholder data fra projektets skurbog.",
+        "content": [
+          "Navn",
+          "Rolle",
+          "Timer fordelt på dage",
+          "Total timer"
+        ],
+        "file": "Logbog rapport {{date}}.xlsx",
+        "DownloadError": "Kan ikke downloade skurbogsrapporten, prøv igen!"
+      },
+      "workItemsReport": {
+        "title": "Opmålinger",
+        "description": "Denne rapport er en XML-fil (Excel) og indeholder data om projektets opmålinger.",
+        "content": [
+          "Alle opmålinger inklusiv montagekode, tillægsydelse, genetillæg, operationstid, arbejdstid, kr.",
+          "Mappe information",
+          "Mappe ydertid"
+        ],
+        "file": "Opmalinger rapport {{date}}.xlsx",
+        "DownloadError": "Kan ikke downloade opmålingsrapporten, prøv igen!"
+      },
+      "printReports": {
+        "projektInfo": {
+          "date": "Dato for rapport {{date}}",
+          "infoTitle": "Projektinfo for {{projektName}}"
+        },
+        "projectTime": {
+          "description1": "Følgende timer og kr. er vist for de overordnede projektinstillinger i rodmappen.",
+          "description2": "Ønskes et overblik på mappeniveau skal du lave rapport X"
+        },
+        "projectPrice": {
+          "title": "Akkordsum"
+        },
+        "projectUser": {
+          "title": "Projektdeltagere",
+          "table": {
+            "role": "Role",
+            "state": "Status",
+            "email": "Email",
+            "adr": "Adresse",
+            "phone": "Telefon"
+          },
+          "roles": {
+            "Manager": "Projektleder",
+            "Owner": "Akkordholder",
+            "Participant": "Deltager",
+            "Undefined": "Ukendt Rolle"
+          }
+        },
+        "projectGoupedWorkitems": {
+          "title": "Sammenstilling"
+        },
+        "getReportDataError": "Kan ikke hentet rapport data for projektet. Prøv igen!"
+      },
+      "statusReport": {
+        "title": "Slutrapport",
+        "description": "Denne rapport er en XML-fil (Excel) og indeholder projektets løndata. Kan kun trækkes af Akkordholder og projektleder",
+        "content": [
+          "Navn og rolle",
+          "Skurbogsdata",
+          "Forskudsdata pr. time",
+          "Optræk pr. time",
+          "Deling af akkordoverskud"
+        ],
+        "file": "Slutrapport {{date}}.xlsx",
+        "DownloadError": "Kan ikke downloade slutrapporten, prøv igen!"
+      }
+    },
+    "users": {
+      "description": "Projektets deltagerliste er tilgængelig for alle akkorddeltagere.",
+      "table": {
+        "name": "Navn",
+        "role": "Rolle",
+        "status": "Status",
+        "email": "Email",
+        "adr": "Adresse",
+        "phone": "Telefon"
+      },
+      "roles": {
+        "owner": "Akkordholder",
+        "participant": "Deltager",
+        "manager": "Projektleder"
+      },
+      "getUsers": {
+        "error": "Kan ikke indlæse projektes deltager, genindlæs siden."
+      },
+      "create": {
+        "title": "Tilføj deltager til projektet",
+        "placeholderName": "Navn",
+        "nameRequiredError": "Navn skal udfyldes",
+        "captionEmail": "Indtast email*",
+        "placeholderEmail": "Email",
+        "emailRequiredError": "Email skal udfyldes",
+        "emailInvalidError": "Email er ikke gyldig",
+        "captionRole": "Vælge rolle*",
+        "captionAdr": "Indtast adresse (valgfri)",
+        "placeholderAdr": "Adresse",
+        "captionPhone": "Indtast telefonnummer (valgfri)",
+        "phoneInvalidError": "Telefonnummer ikke gyldig",
+        "success": {
+          "description": "Deltager er tilføjet projektet."
+        },
+        "error": {
+          "description": "Deltager kunne ikke tilføjes projektet, prøv igen!"
+        }
+      }
+    }
+  },
+  "draft": {
+    "title": "Kladde",
+    "description": "I kladder kan der tilføjes opmålinger uden internetforbindelse. En opmåling tæller først med i akkordsummen, når den er kopieret til en mappe i projektet."
+  },
+  "logbook": {
+    "getLogbook": {
+      "error": "Kan ikke hente logbogen, genindlæs siden"
+    },
+    "title": "Skurbog",
+    "select": "Skurbog for",
+    "salaryAdvance": {
+      "edit": {
+        "title": "Rediger forskudsbetaling",
+        "description": "Vær opmærksom på at ændringer af forskudsbetaling ændrer alle efterfølgende ugers forskudsbetaling.",
+        "description2": "Obs: Ønsker du at fjerne en indtastet betaling, skal du gå til den uge, hvorfra forskudsbetalingen er oprettet.",
+        "type": {
+          "caption": "Angiv betalingstype",
+          "participant": "Forskudsbetaling",
+          "apprentice": "Sats for lærlingeløn"
+        },
+        "amount": {
+          "caption": "Indtast betaling pr. time"
+        },
+        "footer": "Når du fjerner en ændring går den tilbage til det tidligere beløb for betaling. pr. time.",
+        "confirmation": {
+          "remove": {
+            "title": "Fjern overskrivning",
+            "description": "Du er ved at fjerne overskrivning af betaling pr. time. Når du fjerner en ændring går den tilbage til det tidligere beløb for betaling. pr. time.",
+            "zeroSetDescription": "Betaling er sat til 0, du er ved at fjerne overskrivning af betaling pr. time. Når du fjerner en ændring går den tilbage til det tidligere beløb for betaling. pr. time."
+          },
+          "update": {
+            "title": "Overskriv betaling",
+            "description": "Du er ved at overskrive betaling pr. time."
+          }
+        }
+      },
+      "title": "Forskudsbetaling",
+      "titleApprentice": "Sats for lærling løn",
+      "periodFrom": "Gældende f.o.m. uge {{weekFrom}}, {{yearFrom}} til -",
+      "periodTo": "Gældende f.o.m. uge - til. uge {{weekTo}}, {{yearTo}}",
+      "periodFromTo": "Gældende f.o.m. uge {{weekFrom}}, {{yearFrom}} til uge {{weekTo}}, {{yearTo}}",
+      "periodNone": "Der er ingen forskudsbetaling valgt",
+      "pricePrHour": "kr./t"
+    },
+    "totalTimeWeek": "Denne uge",
+    "totalTime": "Afsluttede timer på projektet",
+    "submit": "Afslut uge",
+    "info": {
+      "title": "Info",
+      "absence": {
+        "title": "Fravær = 0",
+        "description": "Husk at sygdom, ferie og andet fravær sættes som 0 på den pågældende dag. Du har altid mulighed for at tilføje en note til ugen via. note-ikonet."
+      },
+      "close": {
+        "title": "Afslut uge",
+        "description": "Når du afslutter en uge, bliver dine timer låst. Du kan derfor ikke redigere dem. Har du afsluttet ved en fejl, kan du altid bede din akkordholder om at låse op for ugen igen."
+      }
+    },
+    "timeRegistration": {
+      "title": "Timer for {{date}}",
+      "success": {
+        "description": "Den indtastede tid er registreret i systemet."
+      }
+    },
+    "description": {
+      "title": "Note for uge {{week}}",
+      "success": {
+        "description": "Noten er gemt og opdateret på ugen."
+      },
+      "noDescription": "Der er ikke tilføjet en note til ugen"
+    },
+    "close": {
+      "title": "Afslut denne uge?",
+      "description": "Når du afslutter denne uge, har du ikke mulighed for at ændre i timerne igen. Timerne vil derefter blive valideret af akkordholder.",
+      "success": {
+        "description": "Den valgte uge er afsluttet og timerne er låst."
+      }
+    },
+    "unlock": {
+      "title": "Lås uge op",
+      "description": "Lås ugen op for deltageren, så der kan registreres tid. Husk at afslutte ugen igen efter tidsregistrering.",
+      "success": {
+        "description": "Den valgte uge er låst op og der kan igen registreres tid for deltageren."
+      },
+      "submit": "Lås op"
+    }
+  },
+  "folder": {
+    "menu": {
+      "info": "Se info",
+      "link": "Kopier link"
+    },
+    "createEdit": {
+      "titleCreate": "Ny mappe",
+      "titleEdit": "Rediger mappe",
+      "nameLabel": "Vælg navn på mappe",
+      "name": "Navn på mappe",
+      "description": {
+        "description": "Noten kan læses af alle tilknyttet projektet i Akkord+",
+        "inputLabel": "Vælg note på mappe",
+        "input": "Note på mappe"
+      },
+      "success": {
+        "createDescription": "Mappen blev oprettet",
+        "editTitle": "Mappe redigeret",
+        "editDescription": "Mappen blev redigeret"
+      }
+    },
+    "editName": {
+      "title": "Rediger mappe name",
+      "name": "Navn på mappen",
+      "success": {
+        "description": "Mappens navnet blev redigeret"
+      }
+    },
+    "editDescription": {
+      "title": "Rediger mappe note",
+      "name": "Note på mappen",
+      "success": {
+        "description": "Mappens note blev redigeret"
+      }
+    },
+    "link": {
+      "success": "Link gemt i udklipsholder"
+    },
+    "move": {
+      "restrictionError": "Du har ikke adgang til at flytte en mappe",
+      "title": "Flyt mappe",
+      "description": "Klik i træet og find den mappe du vil flytte mappen til.",
+      "success": {
+        "description": "Mappen blev flyttet til den valgte mappe"
+      }
+    },
+    "copy": {
+      "title": "Kopier mappe til",
+      "description": "Når du kopierer en mappe til en ny plads i mappestrukturen, kopieres mappens indhold i form af opmålinger.",
+      "success": {
+        "description": "Mappen blev kopieret til den valgte mappe"
+      }
+    },
+    "delete": {
+      "title": "Slet denne mappe?",
+      "description": "Ved at slette denne mappe, sletter du mappen samt mappens eventuelle undermapper, opmålinger og dokumenter.",
+      "success": {
+        "description": "Mappen blev slettet"
+      }
+    },
+    "baseRate": {
+      "notification": "Mappens ydertid er overskrevet"
+    },
+    "lock": {
+      "locked": {
+        "button": "Lås op",
+        "iconText": "Låst",
+        "header": "Vil du låse denne mappe op?",
+        "description": "Når en mappe er låst, kan akkorddeltagere ikke tilføje eller redigere opmålinger. Du har mulighed for at ændre låseinstillingerne. Vær opmærksom på, om du ønsker, at ændringen skal gælde for alle eventuelle undermapper"
+      },
+      "open": {
+        "button": "Lås",
+        "iconText": "Åben",
+        "header": "Vil du låse denne mappe?",
+        "description": "Når en mappe er låst, kan akkorddeltagere ikke tilføje eller redigere opmålinger. Du har mulighed for at ændre låseinstillingerne. Vær opmærksom på, om du ønsker, at ændringen skal gælde for alle eventuelle undermapper"
+      },
+      "includeSumFolders": "Inklusiv alle undermapper",
+      "successLocked": {
+        "description": "Folderen er nu låst og kan ikke redigeres"
+      },
+      "errorLocked": {
+        "description": "Der er sket en fejl, folderen kan ikke låses, prøv igen"
+      },
+      "successOpened": {
+        "description": "Folderen er nu låst op og kan redigeres"
+      },
+      "errorOpen": {
+        "description": "Der er sket en fejl, folderen kan ikke åbnes, prøv igen"
+      }
+    },
+    "extraWork": {
+      "iconText": "Ekstra arbejde",
+      "extraWork": {
+        "title": "Markér som \"Ekstra arbejde\"",
+        "description": "Du er ved at ændre status på denne mappe. Vær opmærksom på at ændringen også gælder alle eventuelle undermapper.",
+        "button": "Markér",
+        "restrictionError": "Du har ikke adgang til at markere mappe som ekstra arbejde",
+        "success": {
+          "description": "Mappen er markeret som ekstra arbejde"
+        },
+        "error": {
+          "description": "Der er sket en fejl, mappen kan ikke markeres som ekstra arbejde, prøv igen"
+        }
+      },
+      "normal": {
+        "title": "Fjern markering af ekstra arbejde for mappe",
+        "description": "Du er ved at ændre status på mappen. Vær opmærksom på at ændringen også gælder alle eventuelle undermapper.",
+        "button": "Fjern",
+        "restrictionError": "Du har ikke adgang til at fjerne markeringen ekstra arbejde fra mappe",
+        "success": {
+          "description": "Markeringen ekstra arbejde er fjernet fra mappen"
+        },
+        "error": {
+          "description": "Der er sket en fejl, kan ikke fjerne markeringen ekstra arbejde fra mappen, prøv igen"
+        }
+      }
+    }
+  },
+  "content": {
+    "overview": {
+      "title": "Overblik",
+      "description": {
+        "noDescription": "Der er ikke tilføjet en note til mappen"
+      },
+      "subtitles": {
+        "info": "Info",
+        "status": "Status Overblik"
+      },
+      "documents": {
+        "title": "Dokumenter",
+        "noDocuments": "Der er ikke tilføjet dokumenter til mappen",
+        "documentUploaded": "{{filename}} tilføjet, der kan gå et øjeblik før dokumentet er færdigscannede og kan åbnes",
+        "uploadError": "Dokumentet blev ikke oploadet, noget gik galt. Prøv igen og tjek evt. at det er en gældende filformat fx. PDF, JPEG, PNG",
+        "uploadFileSizeError": "Dokumentet kan ikke oploades da det er overstiger max størrelse på {{maxFileSize}} MB.",
+        "delete": {
+          "title": "Slet dokumentet: {{documentname}}?",
+          "description": "{{documentname}} uploaded {{uploaddate}}",
+          "success": {
+            "description": "Dokumentet {{documentname}} blev slettet"
+          }
+        },
+        "downloadUnknownDoc": "unknownDocument.pdf",
+        "downloadError": "Kan ikke downloade valgte dokument, prøv igen!"
+      },
+      "pieceworkSummation": {
+        "titleMeasurement": "Opmåling inkl. undermapper",
+        "titleAdditional": "Heraf markeret som opmålt Ekstra arbejde "
+      },
+      "rates": {
+        "title": "Overblik over satser"
+      },
+      "grouping": {
+        "title": "Sammenstilling",
+        "widget": {
+          "noContentText": "Der er ikke nok data i mappen til at vise et overblik. Begynd at tilføje noget udført arbejde, for at se et overblik her.",
+          "description": "På denne liste vises alle materialer og ydelser i mappen inkl. alle undermapper.",
+          "table": {
+            "title": "Materiale/Ydelse",
+            "quantity": "Antal"
+          },
+          "error": "Beklager, der skete en fejl med sammenstillings-tabellen. Prøv igen."
+        },
+        "dialog": {
+          "description": "På denne liste vises alle materialer og ydelser i mappen inkl. alle undermapper",
+          "table": {
+            "title": "Navn og nr.",
+            "quantity": "Antal",
+            "payment": "Kr."
+          }
+        }
+      }
+    },
+    "measurements": {
+      "title": "Opmåling",
+      "getWorkItemsError": "Der er sket en fejl ved hentning af opmålinger for folderen, prøv igen",
+      "noWorkItemsIsRegistred": "Der er ingen opmålinger registreret endnu",
+      "table": {
+        "workItem": "Materiale el. ydelse",
+        "workItemSmall": "Opmåling",
+        "moutingCode": "Montagekode",
+        "operationSupplement": "Tillæg",
+        "amount": "Antal",
+        "unit": "Enhed",
+        "operationTime": "Arbejdstid",
+        "operationTotalTime": "Arbejdstid total",
+        "payment": "Kr.",
+        "cellValue": {
+          "mountingCode": "Montagekode",
+          "operationSupplement": "Tillægsydelse ({{value}})",
+          "supplement": "Genetillæg",
+          "mountingCodeSmall": "M",
+          "operationSupplementSmall": "T",
+          "supplementSmall": "G"
+        }
+      },
+      "delete": {
+        "restrictionError": "Du har ikke adgang til at slette opmålinger",
+        "success": {
+          "description": "Opmåling(er) er slettet."
+        },
+        "title": "Slet opmåling(er)?",
+        "description": "Du er ved at slette opmåling(er). Handlingen kan ikke fortrydes."
+      },
+      "create": {
+        "restrictionError": "Du har ikke adgang til at lave en opmåling",
+        "header": "Tilføj opmåling",
+        "unknownStep": "Ukendt step, noget gik galt!",
+        "common": {
+          "amount": "Antal"
+        },
+        "workitemTypeStep": {
+          "tabs": {
+            "material": "Materiale",
+            "favorites": "Favoritter",
+            "operations": "Ydelse"
+          },
+          "missingOfflineFavoritSelection": "Vælg en farvorit for at fortsætte"
+        },
+        "selectMaterialStep": {
+          "search": "Søg efter materialer",
+          "searchMinChars": "Indtast mindst {{minchars}} karakterer for at søge",
+          "searchResultShow": "Der vises {{shown}} materialer",
+          "searchError": "Der er sket en fejl ved søgning, prøv igen",
+          "noResults": "Kan ikke finde nogle materialer udfra søgekriterierne",
+          "missingMaterial": "Vælg materiale for at fortsætte",
+          "table": {
+            "material": "Materiale",
+            "unit": "Enhed"
+          }
+        },
+        "selectFavoriteStep": {
+          "noFavorites": "Der findes ingen favoritter på projektet",
+          "table": {
+            "favorite": "Indhold",
+            "unit": "Enhed"
+          }
+        },
+        "selectOperationStep": {
+          "search": "Søg efter ydelser",
+          "searchMinChars": "Indtast mindst {{minchars}} karakterer for at søge",
+          "searchResultShow": "Der vises {{shown}} ydelser",
+          "searchError": "Der er sket en fejl ved søgning, prøv igen",
+          "noResults": "Kan ikke finde nogle ydelser udfra søgekriterierne",
+          "missingOperation": "Vælg ydelse for at fortsætte",
+          "table": {
+            "operation": "Ydelse",
+            "number": "Nummer"
+          }
+        },
+        "calculatePreview": {
+          "calculatePreviewMaterialError": "Der er sket en fejl ved udregningen af opsummering for materialet, prøv igen.",
+          "calculatePreviewOperationError": "Der er sket en fejl ved udregningen af opsummering for ydelsen, prøv igen."
+        },
+        "selectMountingCodesStep": {
+          "header": "Vælg montagekode",
+          "material": "Materiale",
+          "getMountingCodesError": "Der er sket en fejl ved hentningen af montagekoder, prøv igen",
+          "mountingCode": "Montagekode",
+          "noMountingCode": "Ingen montagekode"
+        },
+        "selectAmountStep": {
+          "header": "Vælg antal",
+          "operation": "Ydelse",
+          "material": "Materiale"
+        },
+        "selectSupplementOperationStep": {
+          "header": "Vælg tillægsydelser",
+          "caption": "Tillægsydelser"
+        },
+        "selectSupplementsStep": {
+          "header": "Vælg genetillæg",
+          "caption": "Genetillæg",
+          "getSupplementsError": "Der er sket en fejl ved henting af genetillæg, prøv igen"
+        },
+        "success": {
+          "description": "Din opmålingslinje er nu tilføjet mappen"
+        }
+      },
+      "edit": {
+        "restrictionError": "Du har ikke adgang til at redigere opmålingen",
+        "success": {
+          "description": "Din opmålingslinje er opdateret"
+        },
+        "selectAmountStep": {
+          "header": "Opdater antal"
+        }
+      },
+      "info": {
+        "headerFlow": "Gennemse detaljer",
+        "headerView": "Detaljer om opmåling",
+        "price": "Kr. i alt",
+        "material": "Navn på materiale",
+        "operation": "Navn på ydelse",
+        "amount": "Antal",
+        "eanNumber": "EAN Nummer",
+        "operationNumber": "Ydelsesnummer",
+        "mountingCode": "Montagekode",
+        "operationSupplement": "Tillægsydelser",
+        "supplement": "Genetillæg",
+        "operationTime": "Operationstid",
+        "workTime": "Arbejdstid",
+        "totalWorkTime": "Arbejdstid total"
+      },
+      "move": {
+        "restrictionError": "Du har ikke adgang til at flytte opmåling(er)",
+        "title": "Flyt opmåling",
+        "description": "Når du flytter en opmåling, fjernes det fra som pågældende plads og placeres et nyt sted.",
+        "success": {
+          "description": "Opmåling(er) blev flyttet til den valgte mappe"
+        }
+      },
+      "copy": {
+        "title": "Kopier opmåling(er) til",
+        "description": "Når du kopierer en opmåling, bliver den på sin pågældende plads og kopieres samtidig til et nyt sted. Alt kopieres med undtagen noter.",
+        "success": {
+          "description": "Opmåling(er) blev kopieret til den valgte mappe"
+        }
+      }
+    },
+    "calculation": {
+      "title": "Beregning",
+      "baseRateAndSupplements": {
+        "title": "Ydertid",
+        "description": "Det samlede tillæg udgør den procentsats, der tillægges operationtiden på opmålinger.",
+        "indirectTime": "Indirekte tid",
+        "personalTime": "Personlig tid",
+        "siteSpecificTime": "Arb.Plads tid",
+        "totalSupplement": "Samlet tillæg",
+        "edit": {
+          "title": "Rediger ydertid",
+          "description": "Vær opmærksom på at ændringer af mappens ydertid også er gældende i eventuelle undermapper.",
+          "lower": "Nedre kvartil",
+          "median": "Median",
+          "upper": "Øvre kvartil",
+          "notChange": "Kan ikke ændres",
+          "resetDescription": "Fjern overskrivning og nulstil til overmappens sats.",
+          "overwrite": "Overskriv værdi",
+          "confirmDescription": "Værdier for ydertid nedarves fra overmapper. Overskrives en værdi, nedarver den ikke længere overmappens. Vær opmærksom på, at ændringen først er gældende, når du har gemt.",
+          "confirmTitleOn": "Overskriv værdi",
+          "confirmTitleOff": "Fjern overskrivning",
+          "confirmTitleOnUserRegulation": "Overskriv værdi",
+          "confirmTitleOffUserRegulation": "Fjern overskrivning",
+          "confirmDescriptionUserRegulation": "Værdier for brugerdefineret regulering nedarves fra overmapper. Overskrives en værdi, nedarver den ikke længere overmappens. Vær opmærksom på, at ændringen først er gældende, når du har gemt.",
+          "confirmTitleNoActionPossible": "Handling ikke mulig",
+          "confirmDescriptionNoActionPossibleBaseRate": "Du er i den øverste folder og derfor er det ikke muligt at ændre indstillingen til nedarvet. Værdier for ydertid nedarves fra overmapper, med mindre denne funktion er slået til.",
+          "confirmDescriptionNoActionPossibleUserDefined": "Du er i den øverste folder og derfor er det ikke muligt at ændre indstillingen til nedarvet. Værdier for brugerdefineret regulering nedarves fra overmapper, med mindre denne funktion er slået til.",
+          "restrictionError": "Du har ikke adgang til at ændre i ydertid eller regulering",
+          "successBaseSupplements": "Ændringer i ydertid er gemt",
+          "failureBaseSupplements": "Gem af ydertid er mislykket",
+          "successBaseRate": "Ændringer i brugerdefineret regulering er gemt",
+          "failureBaseRate": "Gem af brugerdefineret regulering er mislykket"
+        }
+      },
+      "paymentFactor": {
+        "title": "Betalingsfaktor",
+        "description": "Betalingsfaktoren er overens-komstbestemt. En eventuel regulering af betalingsfaktoren kan aftales i mellem parterne.",
+        "currentPeriod": "Nuværende Periode",
+        "userDefinedRegulation": "Brugerdefineret regulering ",
+        "edit": {
+          "title": "Reguler betalingsfaktor",
+          "description": "Vær opmærksom på at regulering af betalingsfaktor er gældende i eventuelle undermapper.",
+          "paymentFactor": "Betalingsfaktor",
+          "paymentPrMinute": "kr. pr. minut"
+        }
+      },
+      "folderSupplements": {
+        "title": "Genetillæg på mappe",
+        "description": "Genetillægget er gældende for hele mappen, samt alle eventuelle undermapper",
+        "emptyState": "Der er endnu ikke tilføjet nogle genetillæg på mappen.",
+        "dialog": {
+          "titleAdd": "Tilføj genetillæg",
+          "titleUpdate": "Rediger genetillæg",
+          "restrictionError": "Du har ikke adgang til at ændre genetillæg på en mappe",
+          "success": "Ændringer af genetillæg på mappen er gemt",
+          "error": "Ændringer af genetillæg på mappen er fejlet. Prøv igen!"
+        },
+        "inherentText": "{{supplementText}} (nedarvet fra {{folderName}})"
+      },
+      "note": {
+        "description": "Genetillægget er gældende for hele mappen, samt alle eventuelle undermapper",
+        "emptyState": "Der er endnu ikke tilføjet nogen note."
+      }
+    }
+  },
+  "mobile": {
+    "navigation": {
+      "home": "Hjem",
+      "piecework": "Akkordarbejde",
+      "logbook": "Skurbog",
+      "draft": "Kladde"
+    }
+  },
+  "shared": {
+    "abort": {
+      "label": "Fortryd",
+      "title": "Forlad siden?",
+      "description": "Er du sikker på at du vil forladen siden? Dine indtastninger vil ikke blive gemt."
+    },
+    "dateSelector": {
+      "illegalDate": "Den valgte dato er ikke gyldig"
+    }
+  }
+}

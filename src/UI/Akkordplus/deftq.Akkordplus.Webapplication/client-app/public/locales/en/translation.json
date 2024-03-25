@@ -1,0 +1,15 @@
+{
+  "common": {
+    "create": "Create",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "languages": {
+    "danish": "Danish",
+    "english": "English"
+  }
+}

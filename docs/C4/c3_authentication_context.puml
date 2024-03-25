@@ -1,0 +1,58 @@
+@startuml Akkord System
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+
+!include DEVICONS/react.puml
+!include DEVICONS/dotnet.puml
+!include DEVICONS/java.puml
+!include DEVICONS/postgresql.puml
+!include FONTAWESOME/server.puml
+!include FONTAWESOME/envelope.puml
+!include FONTAWESOME/cloud.puml
+
+together {
+    Person(projectManager, "Projektleder")
+    Person(accountant, "Bogholder")
+}
+
+together {
+    Person(akkordHolder, "Akkordholder")
+    Person(akkordDeltager, "Akkorddeltager")
+}
+
+System_Boundary(akkordplus, "Akkord+"){
+    Container(web, "web")
+    Container(aadb2c, "Azure AD B2C")
+}
+
+Lay_D(projectManager, akkordplus)
+Lay_D(accountant, akkordplus)
+Lay_D(akkordHolder, akkordplus)
+Lay_D(akkordDeltager, akkordplus)
+
+System_Ext(def, "DEF membership directory")
+System_Ext(tekniq, "Tekniq membership directory")
+System_Ext(external, "External membership directory")
+
+Lay_R(akkordplus, def)
+Lay_D(akkordplus, tekniq)
+Lay_R(akkordplus, external)
+Lay_R(def, external)
+
+Rel_D(web, aadb2c, "Delegates")
+Rel_L(aadb2c, tekniq, "Delegates")
+Rel_R(aadb2c, def, "Integrates")
+Rel_R(aadb2c, external, "Delegates")
+
+Rel_D(accountant, tekniq, "Authenticates")
+Rel_D(projectManager, tekniq, "Authenticates")
+Rel_D(akkordHolder, external, "Authenticates")
+Rel_D(akkordDeltager, external, "Authenticates")
+
+Rel_D(accountant, web, "Logs in")
+Rel_D(projectManager, web, "Logs in")
+Rel_D(akkordHolder, web, "Logs in")
+Rel_D(akkordDeltager, web, "Logs in")
+
+@enduml

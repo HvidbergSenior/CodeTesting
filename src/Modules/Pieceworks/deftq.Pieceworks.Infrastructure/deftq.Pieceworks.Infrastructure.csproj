@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>nullable</WarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\BuildingBlocks\deftq.BuildingBlocks\deftq.BuildingBlocks.csproj" />
+        <ProjectReference Include="..\deftq.Pieceworks.Application\deftq.Pieceworks.Application.csproj" />
+        <ProjectReference Include="..\deftq.Pieceworks.Domain\deftq.Pieceworks.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.Storage.Blobs" Version="12.13.0" />
+    </ItemGroup>
+
+</Project>

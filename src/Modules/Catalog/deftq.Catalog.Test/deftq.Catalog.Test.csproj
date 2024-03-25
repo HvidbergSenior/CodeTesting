@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>nullable</WarningsAsErrors>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoFixture" Version="4.17.0" />
+        <PackageReference Include="FluentAssertions" Version="6.9.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+        <PackageReference Include="NetArchTest.Rules" Version="1.3.2" />
+        <PackageReference Include="xunit" Version="2.4.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="coverlet.collector" Version="3.1.2">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\deftq.BuildingBlocks\deftq.BuildingBlocks.csproj" />
+    <ProjectReference Include="..\..\..\Services\CatalogImport\deftq.Services.CatalogImport.Service\deftq.Services.CatalogImport.Service.csproj" />
+    <ProjectReference Include="..\deftq.Catalog.Infrastructure\deftq.Catalog.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="deftq.Catalog.Infrastructure">
+      <HintPath>..\..\..\Services\CatalogImport\deftq.Services.CatalogImport.Function\bin\Debug\net6.0\bin\deftq.Catalog.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+
+</Project>

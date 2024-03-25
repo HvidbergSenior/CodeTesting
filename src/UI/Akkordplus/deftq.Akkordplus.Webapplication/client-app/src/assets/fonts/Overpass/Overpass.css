@@ -1,0 +1,28 @@
+/* Overpass */
+@font-face {
+  font-family: "Overpass";
+  font-weight: 300;
+  font-style: normal;
+  src: url("./Overpass-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Overpass";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./Overpass-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Overpass";
+  font-weight: 500;
+  font-style: normal;
+  src: url("./Overpass-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Overpass";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Overpass-Black.ttf") format("truetype");
+}

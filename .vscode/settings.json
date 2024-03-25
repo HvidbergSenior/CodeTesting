@@ -1,0 +1,18 @@
+{
+    "dotnet-test-explorer.enableTelemetry": false,
+    "dotnet-test-explorer.testProjectPath": "src/**/*.sln",
+    "dotnet-test-explorer.codeLensFailed": "Failed",
+    "dotnet-test-explorer.testArguments": "/p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=../lcov.info",
+    "cSpell.words": [
+        "Akkordplus",
+        "deftq"
+    ],
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "'JetBrains Mono','Cascadia Code PL', Consolas, 'Courier New', monospace",
+    "csharp.inlayHints.parameters.enabled": true,
+    "csharp.inlayHints.parameters.forOtherParameters": false,
+    "csharp.inlayHints.parameters.forObjectCreationParameters": true,
+    "csharpextensions.reFormatAfterChange": true,
+    "dotnetCoreExplorer.searchpatterns": "src/**/bin/**/*.{dll,exe}",
+    "coverage-gutters.coverageBaseDir": "src/**"
+}

@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "react-app",
+    "react-app/jest",
+    "prettier"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "react/style-prop-object": [
+      "error",
+      {
+        "allow": [
+          "FormattedNumber",
+          "FormattedDateParts",
+          "FormattedRelativeTime"
+        ]
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["@mui/*/*/*"]
+      }
+    ],
+    // TODO: remove for Prod
+    "no-debugger": "off",
+  }
+}

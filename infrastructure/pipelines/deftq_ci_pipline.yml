@@ -1,0 +1,64 @@
+trigger:
+  - develop
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  - name: name_artifact
+    value: "WebApp"
+  - name: path_artifact
+    value: "$(Build.ArtifactStagingDirectory)"
+  - name: path_webApplicationPublish
+    value: "**/deftq.Akkordplus.WebApplication.csproj"
+  - name: path_solution
+    value: "**/deftq.sln"
+  - name: az_function_path
+    value: "$(System.DefaultWorkingDirectory)/src/Services/CatalogImport/deftq.Services.CatalogImport.Function"
+  - name: workingDirectory
+    value: "src"
+  - name: target
+    value: "Release"
+
+steps:
+  - task: UseDotNet@2
+    displayName: "Use dotnet version"
+    inputs:
+      version: "6.x"
+
+  - task: DotNetCoreCLI@2
+    displayName: "Build $(name_artifact)"
+    inputs:
+      command: "build"
+      projects: "$(path_solution)"
+      arguments: "--configuration $(target)"
+
+  - task: DotNetCoreCLI@2
+    displayName: "Test $(name_artifact)"
+    inputs:
+      command: "test"
+      projects: "$(path_solution)"
+      arguments: "--configuration $(target)"
+
+  - task: DotNetCoreCLI@2
+    displayName: "Publish $(name_artifact)"
+    inputs:
+      command: "publish"
+      projects: "$(path_webApplicationPublish)"
+      publishWebProjects: false
+      arguments: "--configuration $(target) --output $(path_artifact)"
+      workingDirectory: "$(workingDirectory)"
+
+  - task: DotNetCoreCLI@2
+    displayName: "Publish AZ function"
+    inputs:
+      command: "publish"
+      projects: "$(az_function_path)"
+      publishWebProjects: false
+      arguments: "--configuration $(target) --output $(path_artifact)"
+
+  - task: PublishPipelineArtifact@0
+    displayName: Publish artifacts
+    inputs:
+      targetPath: "$(path_artifact)"
+      artifactName: "$(name_artifact)"

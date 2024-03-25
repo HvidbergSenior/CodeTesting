@@ -1,0 +1,21 @@
+{
+    "recommendations": [
+        "pomdtr.excalidraw-editor",
+        "yzhang.markdown-all-in-one",
+        "mdickin.markdown-shortcuts",
+        "davidanson.vscode-markdownlint",
+        "jebbs.plantuml",
+        "fernandoescolar.vscode-solution-explorer",
+        "josefpihrt-vscode.roslynator",
+        "ms-dotnettools.csharp",
+        "formulahendry.dotnet",
+        "derivitec-ltd.vscode-dotnet-adapter",
+        "formulahendry.dotnet-test-explorer",
+        "ryanluker.vscode-coverage-gutters",
+        "ms-azuretools.vscode-docker",
+        "editorconfig.editorconfig",
+        "eamodio.gitlens",
+        "aliasadidev.nugetpackagemanagergui",
+        "jchannon.csharpextensions"
+    ]
+}

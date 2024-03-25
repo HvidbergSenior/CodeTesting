@@ -1,0 +1,8 @@
+{
+  "schemaFile": "http://localhost:5000/swagger/v1/swagger.json",
+  "apiFile": "./src/api/baseApi.ts",
+  "apiImport": "baseApi",
+  "outputFile": "./src/api/generatedApi.ts",
+  "exportName": "generatedApi",
+  "hooks": true
+}

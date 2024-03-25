@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Create Query and Handler</Title>
+            <Author>Mjølner Informatics</Author>
+            <Description>Create query infrastructure</Description>
+            <Shortcut>qry</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[
+                public class $queryName$Query : IQuery<$returnType$>
+                {
+                    internal Guid Id { get; private set; }
+            
+                    private $queryName$Query(Guid id)
+                    {
+                        Id = id;
+                    }
+                    public static $queryName$Query Create(Guid id)
+                    {
+                        return new $queryName$Query(id);
+                    }
+                }
+                internal class $queryName$QueryHandler : IQueryHandler<$queryName$Query, $returnType$>
+                {
+                    public $queryName$Query()
+                    {
+                    }
+            
+                    public async Task<$returnType$> Handle($queryName$Query query, CancellationToken cancellationToken)
+                    {
+                        return $returnType$;
+                    }
+                }
+
+                public class $queryName$QueryValidator : AbstractValidator<$queryName$Query>
+                {
+                    public $queryName$QueryValidator()
+                    {
+                        RuleFor(x => x.Id).NotEmpty();
+                    }
+                }
+            
+                public class $queryName$QueryAuthorizer : IAuthorizer<$queryName$Query>
+                {
+                    public Task<AuthorizationResult> Authorize($queryName$Query query, CancellationToken cancellation)
+                    {
+                        return Task.FromResult(AuthorizationResult.Succeed());
+                    }
+                }
+                ]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>queryName</ID>
+                    <Default>queryName</Default>
+                    <ToolTip>The name of the query</ToolTip>
+                </Literal>
+                <Literal>
+                    <ID>returnType</ID>
+                    <Default>string</Default>
+                    <ToolTip>Return type from query</ToolTip>
+                </Literal>
+            </Declarations>
+            <Imports>
+                <Import>
+                    <Namespace>deftq.BuildingBlocks</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>deftq.BuildingBlocks.Application.Queries</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>deftq.BuildingBlocks.DataAccess</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>deftq.BuildingBlocks.Exceptions</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>FluentValidation</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>System</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>System.Threading</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>System.Threading.Tasks</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

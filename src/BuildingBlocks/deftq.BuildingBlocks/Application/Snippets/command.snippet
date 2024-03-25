@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Create Command and Handler</Title>
+      <Author>Mjølner Informatics</Author>
+      <Description>Create command infrastructure</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>cmd</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="csharp" Delimiter="$"><![CDATA[
+                public sealed class $commandName$Command : ICommand<ICommandResponse>
+                {
+                    internal Guid Id { get; private set; }
+            
+                    private $commandName$Command(Guid id)
+                    {
+                        Id = id;
+                    }
+                    public static $commandName$Command Create(Guid id)
+                    {
+                        return new $commandName$Command(id);
+                    }
+                }
+                internal class $commandName$CommandHandler : ICommandHandler<$commandName$Command, ICommandResponse>
+                {
+                    public $commandName$CommandHandler()
+                    {
+                    }
+            
+                    public async Task<ICommandResponse> Handle($commandName$Command command, CancellationToken cancellationToken)
+                    {
+                        return EmptyCommandResponse.Default;
+                    }
+                }
+
+                public class $commandName$CommandValidator : AbstractValidator<$commandName$Command>
+                {
+                    public $commandName$CommandValidator()
+                    {
+                        RuleFor(x => x.Id).NotEmpty();
+                    }
+                }
+            
+                public class $commandName$CommandAuthorizer : IAuthorizer<$commandName$Command>
+                {
+                    public Task<AuthorizationResult> Authorize($commandName$Command command, CancellationToken cancellation)
+                    {
+                        return Task.FromResult(AuthorizationResult.Succeed());
+                    }
+                }
+                ]]></Code>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>commandName</ID>
+          <ToolTip>The name of the command</ToolTip>
+          <Default>commandName</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Imports>
+        <Import>
+          <Namespace>deftq.BuildingBlocks.Application</Namespace>
+        </Import>
+        <Import>
+          <Namespace>deftq.BuildingBlocks.Application.Commands</Namespace>
+        </Import>
+        <Import>
+          <Namespace>deftq.BuildingBlocks.DataAccess</Namespace>
+        </Import>
+        <Import>
+          <Namespace>deftq.BuildingBlocks.Exceptions</Namespace>
+        </Import>
+        <Import>
+          <Namespace>deftq.BuildingBlocks</Namespace>
+        </Import>
+        <Import>
+          <Namespace>FluentValidation</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Threading</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

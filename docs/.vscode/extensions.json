@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "jebbs.plantuml",
+        "yzhang.markdown-all-in-one",
+        "mdickin.markdown-shortcuts",
+        "davidanson.vscode-markdownlint",
+        "yzane.markdown-pdf",
+        "pomdtr.excalidraw-editor",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}

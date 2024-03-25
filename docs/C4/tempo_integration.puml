@@ -1,0 +1,45 @@
+@startuml "Tempo integration"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+
+!include DEVICONS/react.puml
+!include DEVICONS/dotnet.puml
+!include DEVICONS/java.puml
+!include DEVICONS/postgresql.puml
+!include FONTAWESOME/server.puml
+!include FONTAWESOME/envelope.puml
+!include FONTAWESOME/cloud.puml
+
+System_Boundary(akkordplus, "Akkord+") {
+    Container(spa, "Web application") {
+
+    }
+
+    Container(backend, "API") {
+        Component(catalog, "Catalog", "Material & operations catalog")
+        Component(piecework, "Piecework", "Projets & piecework data")
+    }
+
+    Container(blob, "Azure Blob storage") {
+
+    }
+}
+
+System_Boundary(tempo, "Tempo", "Tempo ") {
+    Container(tempo_app, "Tempo application")
+    Container(ftp, "Ftp server")
+}
+
+Rel_D(spa, catalog, "Catalog queries")
+Rel_D(spa, piecework, "Project work")
+Rel_L(piecework, catalog, "Uses materials & operations")
+Rel_L(catalog, ftp, "File download")
+Rel_L(catalog, blob, "File storage")
+Rel_L(catalog, blob, "File import")
+Rel_L(tempo_app, ftp, "File export")
+
+Lay_R(tempo, akkordplus)
+
+@enduml

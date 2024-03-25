@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\BuildingBlocks\deftq.BuildingBlocks\deftq.BuildingBlocks.csproj" />
+      <ProjectReference Include="..\..\..\Modules\Catalog\deftq.Catalog.Domain\deftq.Catalog.Domain.csproj" />
+      <ProjectReference Include="..\..\..\Modules\Catalog\deftq.Catalog.Infrastructure\deftq.Catalog.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\..\Modules\Catalog\deftq.Catalog.Integration\deftq.Catalog.Integration.csproj" />
+      <ProjectReference Include="..\..\..\Modules\UserAccess\deftq.UserAccess.Application\deftq.UserAccess.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Marten" Version="5.10.1" />
+    </ItemGroup>
+
+</Project>
